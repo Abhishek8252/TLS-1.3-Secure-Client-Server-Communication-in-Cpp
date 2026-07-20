@@ -1,69 +1,107 @@
-# Prerequisites
+# ==========================================
+# C++ Build Artifacts
+# ==========================================
+
+# Dependency files
 *.d
 
-# Compiled Object files
-*.slo
-*.lo
+# Object files
 *.o
 *.obj
+*.lo
+*.slo
 
-# Precompiled Headers
+# Precompiled headers
 *.gch
 *.pch
 
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
+# Static libraries
 *.a
 *.lib
+*.la
+*.lai
+
+# Shared libraries
+*.so
+*.so.*
+*.dll
+*.dylib
 
 # Executables
 *.exe
 *.out
 *.app
+server
+client
 
-# Build directories
+# Linker & Debug files
+*.ilk
+*.pdb
+*.dwo
+
+# ==========================================
+# Build Directories
+# ==========================================
+
 build/
 Build/
 build-*/
 
-# CMake generated files
+# ==========================================
+# CMake Generated Files
+# ==========================================
+
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
 install_manifest.txt
 compile_commands.json
 
-# Temporary files
+# Keep Makefile (do not ignore)
+
+# ==========================================
+# OpenSSL Generated Files
+# ==========================================
+
+*.key
+*.crt
+*.csr
+*.pem
+*.srl
+
+# ==========================================
+# Temporary Files
+# ==========================================
+
 *.tmp
 *.log
 *.bak
 *.swp
 
-# vcpkg
-vcpkg_installed/
+# ==========================================
+# Testing / Cache
+# ==========================================
 
-# debug information files
-*.dwo
-
-# test output & cache
 Testing/
 .cache/
+
+# ==========================================
+# Package Managers
+# ==========================================
+
+vcpkg_installed/
+
+# ==========================================
+# IDE Files
+# ==========================================
+
+.vscode/
+.idea/
+*.code-workspace
+
+# ==========================================
+# OS Files
+# ==========================================
+
+.DS_Store
+Thumbs.db
